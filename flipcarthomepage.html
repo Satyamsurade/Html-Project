@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   <style>
+     
+        img
+        {
+            height: 240px;
+            width: 600px;
+        }
+        .aclass
+        {
+            color: white;
+        }
+        button
+        {
+            color: blue;
+            margin-left: 10px;
+        }
+        .mainContainer
+        {
+            width: auto;
+            height: auto;
+            background-color:white;
+            display: flex;
+            flex-direction: row;/* column column-reverse row-reverse*/
+            justify-content: center;
+            align-items: center;
+            /*flex-wrap: wrap;*/
+            align-content: center;
+        }
+        .flexitem
+        {
+            height: 150px;
+            width: 150px;
+            background-color:aqua;
+            margin: 15px;
+        }
+        .Item1
+        {
+            background-image: url(/images/img1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item2
+        {
+            background-image: url(/images/img2.png);
+            background-size: cover;
+            background-position: center;
+
+        }
+        .Item3
+        {
+            background-image: url(/images/img3.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item4
+        {
+            background-image: url(/images/img4.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item5
+        {
+            background-image: url(/images/img5.png);
+            background-size: cover;
+            background-position: top;
+        }
+        .Item6
+        {
+            background-image: url(/images/img6.png);
+            background-size:cover;
+            background-position: center;
+        }
+        .Item7
+        {
+            background-image: url(/images/img7.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item8
+        {
+            background-image: url(/images/img8.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item9
+        {
+            background-image: url(/images/img9.png);
+            background-size:cover;
+            background-position:center;
+        }
+        .Item10
+        {
+            background-image: url(/images/img10.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item11
+        {
+            background-image: url(/images/img12.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item12
+        {
+            background-image: url(/images/img13.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item13
+        {
+            background-image: url(/images/img14.png);
+            background-size: cover;
+        }
+        .Item14
+        {
+            background-image: url(/images/img15.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item15
+        {
+            background-image: url(/images/img16.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .Item16
+        {
+            background-image: url(/images/img17.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .flexitem2
+        {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            margin: 15px;
+        }
+        span
+        {
+            color: yellow;
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg=dark bg-primary navbar-expand-lg">
+        <div class="container">
+        <div class="nav navbar-header">
+            <a class="navbar-brand aclass" href="#">Flipkart <br>Explore<span>Plus<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+              </svg></span></a>
+        </div>
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <input type="text" size="100px" placeholder="Search for products,brands and more">
+            </li>
+            <li class="nav-item">
+                <a class="nav-item" href="/Flipkartloginpage.html">
+                    <button>Login</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aclass" href="#">Become a Seller</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aclass" href="#">More
+                    <select>
+                        <option></option>
+                    </select>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aclass" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>Cart</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="mainContainer">
+        <div class="flexitem Item1"></div>
+        <div class="flexitem Item2"></div>
+        <div class="flexitem Item3"></div>
+        <div class="flexitem Item4"></div>
+        <div class="flexitem Item5"></div>
+        <div class="flexitem Item6"></div>
+        <div class="flexitem Item7"></div>
+        <div class="flexitem Item8"></div>
+        <div class="flexitem Item9"></div>
+        <div class="flexitem Item10"></div>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="/images/img11.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        
+    </div>
+    <div class="mainContainer">
+        <div class="flexitem2 Item11"></div>
+        <a href="/project/CameraPage.html"><div class="flexitem2 Item12"></div></a>
+        <div class="flexitem2 Item13"></div>
+        <div class="flexitem2 Item14"></div>
+        <div class="flexitem2 Item15"></div>
+        <div class="flexitem2 Item16"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body
+    {
+        background-color: rgb(148, 11, 148);    
+    }
+    .maindiv
+    {   
+        width: 1500px;
+        height: 740px;
+        background-color:rgb(148, 11, 148);
+        padding-top: 100px;
+        position:fixed;
+    }
+    .innerdiv
+    {
+        width: 700px;
+        height: 500px;
+        background-color: azure;
+        margin-left: 400px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        position: fixed;
+    }
+    .Div1
+    {
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 500px;
+        background-image: url(/images/19.jpg);
+        background-size: contain;
+    }
+    button
+    {
+        width: 400px;
+        height: 30px;
+        border: 1px solid;
+        font-size: large;
+        color: white;
+        margin-right: 20px;
+        background-color: orangered;
+    }
+    .Div2
+    {
+        margin-top: 80px;
+        margin-left: 50px;
+        line-height: 13px;
+    }
+    #Footer
+    {
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+        margin-top: 50px;
+        text-decoration: none;
+    }   
+    span
+    {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="innerdiv">
+            <div class="griditem Div1"></div>
+            <div class="griditem Div2">
+                <form>
+                <table>
+                <input type="text"  placeholder="Name" size="50px"><br><br>
+                <input type="text"  placeholder="Address" size="50px"><br><br>
+                <tr>Gender   :
+                <input type="radio" name="N">Male 
+                <input type="radio" name="N">Female
+                </tr>
+                <br><br>
+                <tr>Date of Birth:  
+                <input type="date">
+                </tr>
+                <br><br>
+                <tr>State:</tr>
+                <select>
+                    <option>Select State</option>
+                </select>
+                <br><br>
+                <tr>City:           </tr>
+                <select>
+                    <option>Select City</option>
+                </select> <span>      </span>
+                <tr>Pincode:
+                    <input type="text">
+                </tr>
+                <br><br>
+                <input type="text" placeholder="Email-id" size="50px">
+                <br><br>
+                <input type="text" placeholder="Mobile-No" size="50px">
+                <P>By continuing, you agree to Flipkart's <span>Terms of Use</span> and <span>privacy <br> Policy</span></P>
+                <button>Sign Up</button>
+                </table>
+                </form>
+                <p id="Footer">Existing User? <a href="/project/Flipkartloginpage.html" id="Footer"><span>Log in</span></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

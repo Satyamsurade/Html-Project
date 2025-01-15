@@ -1,0 +1,59 @@
+body
+{
+    background-color: brown;
+}
+.maindiv
+{
+    width:100%;
+    height: 100%;
+    background-color: brown;
+    padding-top: 100px;
+    position: fixed;
+}
+.innerdiv
+{
+    width: 700px;
+    height: 500px;
+    background-color: azure;
+    margin-left: 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: fixed;
+}
+
+.Div1
+{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(/images/18.jpg);
+    background-size: cover;
+    
+}
+button
+{
+    width: 400px;
+    height: 30px;
+    border: 1px solid;
+    font-size: large;
+    color: white;
+    margin-right: 20px;
+    background-color: orangered;
+}
+.Div2
+{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+#Footer
+{
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    margin-top: 200px;
+    text-decoration: none;
+}
+span
+{
+    color: blue;
+}
